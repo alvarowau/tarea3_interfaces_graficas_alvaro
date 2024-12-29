@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>prueba_principal</class>
+ <widget class="QWidget" name="prueba_principal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>826</width>
+    <height>583</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>831</width>
+     <height>581</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+    background-color: #F8F9FA; 
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif; 
+    font-size: 14px; 
+    color: #333333;
+}
+
+QListWidget {
+    background-color: #FFFFFF; 
+    border: 2px solid #CCCCCC; 
+    border-radius: 8px; 
+    padding: 5px; 
+    font-size: 12px; 
+    color: #333333; 
+}
+
+QListWidget::item {
+    padding: 5px;
+}
+
+QListWidget::item:selected {
+    background-color: #2A9D8F; 
+    color: #FFFFFF; 
+}
+
+QTableView {
+    background-color: #FFFFFF; 
+    border: 2px solid #CCCCCC; 
+    border-radius: 8px; 
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif; 
+    font-size: 14px; 
+    color: #333333; 
+}
+
+QTableView::item {
+    padding: 5px;
+}
+
+QTableView::item:selected {
+    background-color: #2A9D8F; 
+    color: #FFFFFF; 
+}
+
+QHeaderView::section {
+    background-color: #2A9D8F; 
+    color: white; 
+    font-weight: bold; 
+    padding: 5px; 
+    border: 1px solid #CCCCCC; 
+}
+
+QPushButton {
+    background-color: #2A9D8F; 
+    color: #FFFFFF; 
+    border-radius: 8px; 
+    padding: 6px 12px; 
+    font-size: 14px; 
+    border: 2px solid #2A9D8F; 
+}
+
+QPushButton:hover {
+    background-color: #A4C639; 
+    border: 2px solid #A4C639; 
+}
+
+QPushButton:pressed {
+    background-color: #207567; 
+    border: 2px solid #207567; 
+}
+</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QTableView" name="tableView">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>20</y>
+      <width>661</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>101</width>
+      <height>192</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>460</y>
+      <width>171</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Reservar</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,1525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>window_reserva</class>
+ <widget class="QWidget" name="window_reserva">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>481</width>
+    <height>761</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>481</width>
+    <height>761</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>481</width>
+    <height>761</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QFrame" name="a_frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>481</width>
+     <height>761</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>481</width>
+     <height>761</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>481</width>
+     <height>761</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+    background-color: #F8F9FA; 
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif; 
+    font-size: 14px; 
+    color: #333333; 
+}
+QLabel {
+    font-weight: bold; 
+    color: #2A9D8F; 
+    font-size: 12px; 
+}
+QLineEdit {
+    background-color: #FFFFFF; 
+    border: 2px solid #CCCCCC; 
+    border-radius: 8px; 
+    padding: 5px; 
+    font-size: 12px; 
+    color: #333333; 
+    selection-background-color: #2A9D8F; 
+    selection-color: #FFFFFF; 
+}
+
+QLineEdit:hover {
+    border: 2px solid #A4C639; 
+}
+
+QLineEdit:focus {
+    border: 2px solid #2A9D8F; 
+    outline: none; 
+    background-color: #F0FDFC; 
+    color: #333333; 
+}
+QPushButton {
+    background-color: #2A9D8F; 
+    color: #FFFFFF; 
+    border-radius: 8px; 
+    padding: 6px 12px; 
+    font-size: 14px; 
+    border: 2px solid #2A9D8F; 
+}
+
+QPushButton:hover {
+    background-color: #A4C639; 
+    border: 2px solid #A4C639; 
+}
+
+QPushButton:pressed {
+    background-color: #207567; 
+    border: 2px solid #207567; 
+}
+QComboBox {
+    background-color: #FFFFFF; 
+    border: 2px solid #CCCCCC; 
+    border-radius: 8px; 
+    padding: 5px; 
+    font-size: 12px; 
+    color: #333333; 
+}
+
+QComboBox:hover {
+    border: 2px solid #A4C639; 
+}
+
+QComboBox:focus {
+    border: 2px solid #2A9D8F; 
+    outline: none; 
+    background-color: #F0FDFC; 
+}
+
+QComboBox QAbstractItemView {
+    background-color: #FFFFFF; 
+    selection-background-color: #2A9D8F; 
+    selection-color: #FFFFFF; 
+}
+QSpinBox {
+    background-color: #FFFFFF; 
+    border: 2px solid #CCCCCC; 
+    border-radius: 8px; 
+    padding: 5px; 
+    font-size: 12px; 
+    color: #333333; 
+}
+
+QSpinBox:hover {
+    border: 2px solid #A4C639; 
+}
+
+QSpinBox:focus {
+    border: 2px solid #2A9D8F; 
+    outline: none; 
+    background-color: #F0FDFC; 
+}
+QRadioButton {
+    color: #333333; 
+    font-size: 12px; 
+}
+
+QRadioButton::indicator {
+    border: 2px solid #CCCCCC; 
+    border-radius: 6px; 
+    width: 12px; 
+    height: 12px; 
+    background: #FFFFFF; 
+}
+
+QRadioButton::indicator:hover {
+    border: 2px solid #A4C639; 
+}
+
+QRadioButton::indicator:checked {
+    background: #2A9D8F; 
+}
+
+QGroupBox {
+    border: 2px solid #CCCCCC; 
+    border-radius: 8px; 
+    margin-top: 10px; 
+    font-weight: bold; 
+    font-size: 12px; 
+    color: #2A9D8F; 
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin; 
+    subcontrol-position: top center; 
+    padding: 0 10px; 
+    background-color: #FFFFFF; 
+}
+QDateEdit {
+    background-color: #FFFFFF; 
+    border: 2px solid #CCCCCC; 
+    border-radius: 8px; 
+    padding: 5px; 
+    font-size: 12px; 
+    color: #333333; 
+}
+
+QDateEdit:hover {
+    border: 2px solid #A4C639; 
+}
+
+QDateEdit:focus {
+    border: 2px solid #2A9D8F; 
+    outline: none; 
+    background-color: #F0FDFC; 
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_7">
+    <item row="0" column="0">
+     <widget class="QWidget" name="a_widget_title" native="true">
+      <property name="styleSheet">
+       <string notr="true">QWidget {
+    background-color: #F8F9FA; 
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif; 
+    font-size: 14px; 
+    color: #333333; 
+}
+QLabel {
+    font-weight: bold; 
+    color: #2A9D8F; 
+    font-size: 12px; 
+}
+QLineEdit {
+    background-color: #FFFFFF; 
+    border: 2px solid #CCCCCC; 
+    border-radius: 8px; 
+    padding: 5px; 
+    font-size: 12px; 
+    color: #333333; 
+    selection-background-color: #2A9D8F; 
+    selection-color: #FFFFFF; 
+}
+
+QLineEdit:hover {
+    border: 2px solid #A4C639; 
+}
+
+QLineEdit:focus {
+    border: 2px solid #2A9D8F; 
+    outline: none; 
+    background-color: #F0FDFC; 
+    color: #333333; 
+}
+QPushButton {
+    background-color: #2A9D8F; 
+    color: #FFFFFF; 
+    border-radius: 8px; 
+    padding: 6px 12px; 
+    font-size: 14px; 
+    border: 2px solid #2A9D8F; 
+}
+
+QPushButton:hover {
+    background-color: #A4C639; 
+    border: 2px solid #A4C639; 
+}
+
+QPushButton:pressed {
+    background-color: #207567; 
+    border: 2px solid #207567; 
+}
+QComboBox {
+    background-color: #FFFFFF; 
+    border: 2px solid #CCCCCC; 
+    border-radius: 8px; 
+    padding: 5px; 
+    font-size: 12px; 
+    color: #333333; 
+}
+
+QComboBox:hover {
+    border: 2px solid #A4C639; 
+}
+
+QComboBox:focus {
+    border: 2px solid #2A9D8F; 
+    outline: none; 
+    background-color: #F0FDFC; 
+}
+
+QComboBox QAbstractItemView {
+    background-color: #FFFFFF; 
+    selection-background-color: #2A9D8F; 
+    selection-color: #FFFFFF; 
+}
+QSpinBox {
+    background-color: #FFFFFF; 
+    border: 2px solid #CCCCCC; 
+    border-radius: 8px; 
+    padding: 5px; 
+    font-size: 12px; 
+    color: #333333; 
+}
+
+QSpinBox:hover {
+    border: 2px solid #A4C639; 
+}
+
+QSpinBox:focus {
+    border: 2px solid #2A9D8F; 
+    outline: none; 
+    background-color: #F0FDFC; 
+}
+QRadioButton {
+    color: #333333; 
+    font-size: 12px; 
+}
+
+QRadioButton::indicator {
+    border: 2px solid #CCCCCC; 
+    border-radius: 6px; 
+    width: 12px; 
+    height: 12px; 
+    background: #FFFFFF; 
+}
+
+QRadioButton::indicator:hover {
+    border: 2px solid #A4C639; 
+}
+
+QRadioButton::indicator:checked {
+    background: #2A9D8F; 
+}
+
+QGroupBox {
+    border: 2px solid #CCCCCC; 
+    border-radius: 8px; 
+    margin-top: 10px; 
+    font-weight: bold; 
+    font-size: 12px; 
+    color: #2A9D8F; 
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin; 
+    subcontrol-position: top center; 
+    padding: 0 10px; 
+    background-color: #FFFFFF; 
+}
+QDateEdit {
+    background-color: #FFFFFF; 
+    border: 2px solid #CCCCCC; 
+    border-radius: 8px; 
+    padding: 5px; 
+    font-size: 12px; 
+    color: #333333; 
+}
+
+QDateEdit:hover {
+    border: 2px solid #A4C639; 
+}
+
+QDateEdit:focus {
+    border: 2px solid #2A9D8F; 
+    outline: none; 
+    background-color: #F0FDFC; 
+}</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <spacer name="horizontalSpacer_11">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>120</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="a_label_title">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #2A9D8F; 
+    background-color: transparent; 
+    border: none; 
+    text-align: center; 
+    padding: 10px;
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+}</string>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <spacer name="horizontalSpacer_12">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>120</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QWidget" name="a_widget_tipo_reserva" native="true">
+      <property name="styleSheet">
+       <string notr="true">QWidget {
+    background-color: #F8F9FA; 
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif; 
+    font-size: 14px; 
+    color: #333333; 
+}
+QLabel {
+    font-weight: bold; 
+    color: #2A9D8F; 
+    font-size: 12px; 
+}
+QLineEdit {
+    background-color: #FFFFFF; 
+    border: 2px solid #CCCCCC; 
+    border-radius: 8px; 
+    padding: 5px; 
+    font-size: 12px; 
+    color: #333333; 
+    selection-background-color: #2A9D8F; 
+    selection-color: #FFFFFF; 
+}
+
+QLineEdit:hover {
+    border: 2px solid #A4C639; 
+}
+
+QLineEdit:focus {
+    border: 2px solid #2A9D8F; 
+    outline: none; 
+    background-color: #F0FDFC; 
+    color: #333333; 
+}
+QPushButton {
+    background-color: #2A9D8F; 
+    color: #FFFFFF; 
+    border-radius: 8px; 
+    padding: 6px 12px; 
+    font-size: 14px; 
+    border: 2px solid #2A9D8F; 
+}
+
+QPushButton:hover {
+    background-color: #A4C639; 
+    border: 2px solid #A4C639; 
+}
+
+QPushButton:pressed {
+    background-color: #207567; 
+    border: 2px solid #207567; 
+}
+QComboBox {
+    background-color: #FFFFFF; 
+    border: 2px solid #CCCCCC; 
+    border-radius: 8px; 
+    padding: 5px; 
+    font-size: 12px; 
+    color: #333333; 
+}
+
+QComboBox:hover {
+    border: 2px solid #A4C639; 
+}
+
+QComboBox:focus {
+    border: 2px solid #2A9D8F; 
+    outline: none; 
+    background-color: #F0FDFC; 
+}
+
+QComboBox QAbstractItemView {
+    background-color: #FFFFFF; 
+    selection-background-color: #2A9D8F; 
+    selection-color: #FFFFFF; 
+}
+QSpinBox {
+    background-color: #FFFFFF; 
+    border: 2px solid #CCCCCC; 
+    border-radius: 8px; 
+    padding: 5px; 
+    font-size: 12px; 
+    color: #333333; 
+}
+
+QSpinBox:hover {
+    border: 2px solid #A4C639; 
+}
+
+QSpinBox:focus {
+    border: 2px solid #2A9D8F; 
+    outline: none; 
+    background-color: #F0FDFC; 
+}
+QRadioButton {
+    color: #333333; 
+    font-size: 12px; 
+}
+
+QRadioButton::indicator {
+    border: 2px solid #CCCCCC; 
+    border-radius: 6px; 
+    width: 12px; 
+    height: 12px; 
+    background: #FFFFFF; 
+}
+
+QRadioButton::indicator:hover {
+    border: 2px solid #A4C639; 
+}
+
+QRadioButton::indicator:checked {
+    background: #2A9D8F; 
+}
+
+QGroupBox {
+    border: 2px solid #CCCCCC; 
+    border-radius: 8px; 
+    margin-top: 10px; 
+    font-weight: bold; 
+    font-size: 12px; 
+    color: #2A9D8F; 
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin; 
+    subcontrol-position: top center; 
+    padding: 0 10px; 
+    background-color: #FFFFFF; 
+}
+QDateEdit {
+    background-color: #FFFFFF; 
+    border: 2px solid #CCCCCC; 
+    border-radius: 8px; 
+    padding: 5px; 
+    font-size: 12px; 
+    color: #333333; 
+}
+
+QDateEdit:hover {
+    border: 2px solid #A4C639; 
+}
+
+QDateEdit:focus {
+    border: 2px solid #2A9D8F; 
+    outline: none; 
+    background-color: #F0FDFC; 
+}</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QLabel" name="a_label_title_type">
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+     font-size: 14px; 
+    font-weight: 600; 
+    color: #555555; 
+    background-color: transparent; 
+    border: none; 
+    text-align: left; 
+    padding: 2px; 
+    border-bottom: 2px solid #CCCCCC; 
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Tipo</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>357</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="a_label_type_reserva">
+         <property name="text">
+          <string>Tipo reserva:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QComboBox" name="a_comboBox_tipe_reserva">
+         <property name="minimumSize">
+          <size>
+           <width>220</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>220</width>
+           <height>33</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QWidget" name="a_widget_datas_person" native="true">
+      <property name="styleSheet">
+       <string notr="true">QWidget {
+    background-color: #F8F9FA; 
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif; 
+    font-size: 14px; 
+    color: #333333; 
+}
+QLabel {
+    font-weight: bold; 
+    color: #2A9D8F; 
+    font-size: 12px; 
+}
+QLineEdit {
+    background-color: #FFFFFF; 
+    border: 2px solid #CCCCCC; 
+    border-radius: 8px; 
+    padding: 5px; 
+    font-size: 12px; 
+    color: #333333; 
+    selection-background-color: #2A9D8F; 
+    selection-color: #FFFFFF; 
+}
+
+QLineEdit:hover {
+    border: 2px solid #A4C639; 
+}
+
+QLineEdit:focus {
+    border: 2px solid #2A9D8F; 
+    outline: none; 
+    background-color: #F0FDFC; 
+    color: #333333; 
+}
+QPushButton {
+    background-color: #2A9D8F; 
+    color: #FFFFFF; 
+    border-radius: 8px; 
+    padding: 6px 12px; 
+    font-size: 14px; 
+    border: 2px solid #2A9D8F; 
+}
+
+QPushButton:hover {
+    background-color: #A4C639; 
+    border: 2px solid #A4C639; 
+}
+
+QPushButton:pressed {
+    background-color: #207567; 
+    border: 2px solid #207567; 
+}
+QComboBox {
+    background-color: #FFFFFF; 
+    border: 2px solid #CCCCCC; 
+    border-radius: 8px; 
+    padding: 5px; 
+    font-size: 12px; 
+    color: #333333; 
+}
+
+QComboBox:hover {
+    border: 2px solid #A4C639; 
+}
+
+QComboBox:focus {
+    border: 2px solid #2A9D8F; 
+    outline: none; 
+    background-color: #F0FDFC; 
+}
+
+QComboBox QAbstractItemView {
+    background-color: #FFFFFF; 
+    selection-background-color: #2A9D8F; 
+    selection-color: #FFFFFF; 
+}
+QSpinBox {
+    background-color: #FFFFFF; 
+    border: 2px solid #CCCCCC; 
+    border-radius: 8px; 
+    padding: 5px; 
+    font-size: 12px; 
+    color: #333333; 
+}
+
+QSpinBox:hover {
+    border: 2px solid #A4C639; 
+}
+
+QSpinBox:focus {
+    border: 2px solid #2A9D8F; 
+    outline: none; 
+    background-color: #F0FDFC; 
+}
+QRadioButton {
+    color: #333333; 
+    font-size: 12px; 
+}
+
+QRadioButton::indicator {
+    border: 2px solid #CCCCCC; 
+    border-radius: 6px; 
+    width: 12px; 
+    height: 12px; 
+    background: #FFFFFF; 
+}
+
+QRadioButton::indicator:hover {
+    border: 2px solid #A4C639; 
+}
+
+QRadioButton::indicator:checked {
+    background: #2A9D8F; 
+}
+
+QGroupBox {
+    border: 2px solid #CCCCCC; 
+    border-radius: 8px; 
+    margin-top: 10px; 
+    font-weight: bold; 
+    font-size: 12px; 
+    color: #2A9D8F; 
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin; 
+    subcontrol-position: top center; 
+    padding: 0 10px; 
+    background-color: #FFFFFF; 
+}
+QDateEdit {
+    background-color: #FFFFFF; 
+    border: 2px solid #CCCCCC; 
+    border-radius: 8px; 
+    padding: 5px; 
+    font-size: 12px; 
+    color: #333333; 
+}
+
+QDateEdit:hover {
+    border: 2px solid #A4C639; 
+}
+
+QDateEdit:focus {
+    border: 2px solid #2A9D8F; 
+    outline: none; 
+    background-color: #F0FDFC; 
+}</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="2" column="0">
+        <widget class="QLabel" name="a_label_phone">
+         <property name="text">
+          <string>Télefono:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="a_lineEdit_name">
+         <property name="maximumSize">
+          <size>
+           <width>220</width>
+           <height>33</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="a_lineEdit_phone">
+         <property name="maximumSize">
+          <size>
+           <width>220</width>
+           <height>33</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="a_label_name">
+         <property name="text">
+          <string>Nombre:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0" colspan="2">
+        <widget class="QLabel" name="a_label_title_person">
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+     font-size: 14px; 
+    font-weight: 600; 
+    color: #555555; 
+    background-color: transparent; 
+    border: none; 
+    text-align: left; 
+    padding: 2px; 
+    border-bottom: 2px solid #CCCCCC; 
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Datos Personales:</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QWidget" name="a_widget_reservas" native="true">
+      <property name="styleSheet">
+       <string notr="true">QWidget {
+    background-color: #F8F9FA; 
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif; 
+    font-size: 14px; 
+    color: #333333; 
+}
+QLabel {
+    font-weight: bold; 
+    color: #2A9D8F; 
+    font-size: 12px; 
+}
+QLineEdit {
+    background-color: #FFFFFF; 
+    border: 2px solid #CCCCCC; 
+    border-radius: 8px; 
+    padding: 5px; 
+    font-size: 12px; 
+    color: #333333; 
+    selection-background-color: #2A9D8F; 
+    selection-color: #FFFFFF; 
+}
+
+QLineEdit:hover {
+    border: 2px solid #A4C639; 
+}
+
+QLineEdit:focus {
+    border: 2px solid #2A9D8F; 
+    outline: none; 
+    background-color: #F0FDFC; 
+    color: #333333; 
+}
+QPushButton {
+    background-color: #2A9D8F; 
+    color: #FFFFFF; 
+    border-radius: 8px; 
+    padding: 6px 12px; 
+    font-size: 14px; 
+    border: 2px solid #2A9D8F; 
+}
+
+QPushButton:hover {
+    background-color: #A4C639; 
+    border: 2px solid #A4C639; 
+}
+
+QPushButton:pressed {
+    background-color: #207567; 
+    border: 2px solid #207567; 
+}
+QComboBox {
+    background-color: #FFFFFF; 
+    border: 2px solid #CCCCCC; 
+    border-radius: 8px; 
+    padding: 5px; 
+    font-size: 12px; 
+    color: #333333; 
+}
+
+QComboBox:hover {
+    border: 2px solid #A4C639; 
+}
+
+QComboBox:focus {
+    border: 2px solid #2A9D8F; 
+    outline: none; 
+    background-color: #F0FDFC; 
+}
+
+QComboBox QAbstractItemView {
+    background-color: #FFFFFF; 
+    selection-background-color: #2A9D8F; 
+    selection-color: #FFFFFF; 
+}
+QSpinBox {
+    background-color: #FFFFFF; 
+    border: 2px solid #CCCCCC; 
+    border-radius: 8px; 
+    padding: 5px; 
+    font-size: 12px; 
+    color: #333333; 
+}
+
+QSpinBox:hover {
+    border: 2px solid #A4C639; 
+}
+
+QSpinBox:focus {
+    border: 2px solid #2A9D8F; 
+    outline: none; 
+    background-color: #F0FDFC; 
+}
+QRadioButton {
+    color: #333333; 
+    font-size: 12px; 
+}
+
+QRadioButton::indicator {
+    border: 2px solid #CCCCCC; 
+    border-radius: 6px; 
+    width: 12px; 
+    height: 12px; 
+    background: #FFFFFF; 
+}
+
+QRadioButton::indicator:hover {
+    border: 2px solid #A4C639; 
+}
+
+QRadioButton::indicator:checked {
+    background: #2A9D8F; 
+}
+
+QGroupBox {
+    border: 2px solid #CCCCCC; 
+    border-radius: 8px; 
+    margin-top: 10px; 
+    font-weight: bold; 
+    font-size: 12px; 
+    color: #2A9D8F; 
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin; 
+    subcontrol-position: top center; 
+    padding: 0 10px; 
+    background-color: #FFFFFF; 
+}
+QDateEdit {
+    background-color: #FFFFFF; 
+    border: 2px solid #CCCCCC; 
+    border-radius: 8px; 
+    padding: 5px; 
+    font-size: 12px; 
+    color: #333333; 
+}
+
+QDateEdit:hover {
+    border: 2px solid #A4C639; 
+}
+
+QDateEdit:focus {
+    border: 2px solid #2A9D8F; 
+    outline: none; 
+    background-color: #F0FDFC; 
+}</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="0" colspan="2">
+        <widget class="QLabel" name="a_label_title_reserva">
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+     font-size: 14px; 
+    font-weight: 600; 
+    color: #555555; 
+    background-color: transparent; 
+    border: none; 
+    text-align: left; 
+    padding: 2px; 
+    border-bottom: 2px solid #CCCCCC; 
+}</string>
+         </property>
+         <property name="text">
+          <string>Datos reserva:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="a_label_date">
+         <property name="text">
+          <string>Fecha:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QDateEdit" name="a_dateEdit_date">
+         <property name="minimumSize">
+          <size>
+           <width>220</width>
+           <height>33</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="a_label_type_salon">
+         <property name="text">
+          <string>Tipo salón</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QComboBox" name="a_comboBox_salon">
+         <property name="minimumSize">
+          <size>
+           <width>220</width>
+           <height>33</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="a_label_asistent">
+         <property name="text">
+          <string>Asistentes</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QSpinBox" name="a_spinBox_asistans">
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>70</width>
+           <height>33</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="a_label_tipo_cocina">
+         <property name="text">
+          <string>Tipo cocina:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QComboBox" name="a_comboBox_cocina">
+         <property name="minimumSize">
+          <size>
+           <width>220</width>
+           <height>33</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QWidget" name="a_widget_data_congres" native="true">
+      <property name="styleSheet">
+       <string notr="true">QWidget {
+    background-color: #F8F9FA; 
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif; 
+    font-size: 14px; 
+    color: #333333; 
+}
+QLabel {
+    font-weight: bold; 
+    color: #2A9D8F; 
+    font-size: 12px; 
+}
+QLineEdit {
+    background-color: #FFFFFF; 
+    border: 2px solid #CCCCCC; 
+    border-radius: 8px; 
+    padding: 5px; 
+    font-size: 12px; 
+    color: #333333; 
+    selection-background-color: #2A9D8F; 
+    selection-color: #FFFFFF; 
+}
+
+QLineEdit:hover {
+    border: 2px solid #A4C639; 
+}
+
+QLineEdit:focus {
+    border: 2px solid #2A9D8F; 
+    outline: none; 
+    background-color: #F0FDFC; 
+    color: #333333; 
+}
+QPushButton {
+    background-color: #2A9D8F; 
+    color: #FFFFFF; 
+    border-radius: 8px; 
+    padding: 6px 12px; 
+    font-size: 14px; 
+    border: 2px solid #2A9D8F; 
+}
+
+QPushButton:hover {
+    background-color: #A4C639; 
+    border: 2px solid #A4C639; 
+}
+
+QPushButton:pressed {
+    background-color: #207567; 
+    border: 2px solid #207567; 
+}
+QComboBox {
+    background-color: #FFFFFF; 
+    border: 2px solid #CCCCCC; 
+    border-radius: 8px; 
+    padding: 5px; 
+    font-size: 12px; 
+    color: #333333; 
+}
+
+QComboBox:hover {
+    border: 2px solid #A4C639; 
+}
+
+QComboBox:focus {
+    border: 2px solid #2A9D8F; 
+    outline: none; 
+    background-color: #F0FDFC; 
+}
+
+QComboBox QAbstractItemView {
+    background-color: #FFFFFF; 
+    selection-background-color: #2A9D8F; 
+    selection-color: #FFFFFF; 
+}
+QSpinBox {
+    background-color: #FFFFFF; 
+    border: 2px solid #CCCCCC; 
+    border-radius: 8px; 
+    padding: 5px; 
+    font-size: 12px; 
+    color: #333333; 
+}
+
+QSpinBox:hover {
+    border: 2px solid #A4C639; 
+}
+
+QSpinBox:focus {
+    border: 2px solid #2A9D8F; 
+    outline: none; 
+    background-color: #F0FDFC; 
+}
+QRadioButton {
+    color: #333333; 
+    font-size: 12px; 
+}
+
+QRadioButton::indicator {
+    border: 2px solid #CCCCCC; 
+    border-radius: 6px; 
+    width: 12px; 
+    height: 12px; 
+    background: #FFFFFF; 
+}
+
+QRadioButton::indicator:hover {
+    border: 2px solid #A4C639; 
+}
+
+QRadioButton::indicator:checked {
+    background: #2A9D8F; 
+}
+
+QGroupBox {
+    border: 2px solid #CCCCCC; 
+    border-radius: 8px; 
+    margin-top: 10px; 
+    font-weight: bold; 
+    font-size: 12px; 
+    color: #2A9D8F; 
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin; 
+    subcontrol-position: top center; 
+    padding: 0 10px; 
+    background-color: #FFFFFF; 
+}
+QDateEdit {
+    background-color: #FFFFFF; 
+    border: 2px solid #CCCCCC; 
+    border-radius: 8px; 
+    padding: 5px; 
+    font-size: 12px; 
+    color: #333333; 
+}
+
+QDateEdit:hover {
+    border: 2px solid #A4C639; 
+}
+
+QDateEdit:focus {
+    border: 2px solid #2A9D8F; 
+    outline: none; 
+    background-color: #F0FDFC; 
+}</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="0" column="0" colspan="2">
+        <widget class="QLabel" name="a_label_title_congres">
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+     font-size: 14px; 
+    font-weight: 600; 
+    color: #555555; 
+    background-color: transparent; 
+    border: none; 
+    text-align: left; 
+    padding: 2px; 
+    border-bottom: 2px solid #CCCCCC; 
+}</string>
+         </property>
+         <property name="text">
+          <string>Congreso</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="a_label_jornadas">
+         <property name="text">
+          <string>Jornadas:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QSpinBox" name="a_spinBox_jornadas">
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>70</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLabel" name="a_label_habita">
+         <property name="text">
+          <string>Habitaciones:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QRadioButton" name="a_radioButton_habita">
+         <property name="text">
+          <string>Aceptar</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QWidget" name="a_widget_buttons" native="true">
+      <property name="styleSheet">
+       <string notr="true">QWidget {
+    background-color: #F8F9FA; 
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif; 
+    font-size: 14px; 
+    color: #333333; 
+}
+QLabel {
+    font-weight: bold; 
+    color: #2A9D8F; 
+    font-size: 12px; 
+}
+QLineEdit {
+    background-color: #FFFFFF; 
+    border: 2px solid #CCCCCC; 
+    border-radius: 8px; 
+    padding: 5px; 
+    font-size: 12px; 
+    color: #333333; 
+    selection-background-color: #2A9D8F; 
+    selection-color: #FFFFFF; 
+}
+
+QLineEdit:hover {
+    border: 2px solid #A4C639; 
+}
+
+QLineEdit:focus {
+    border: 2px solid #2A9D8F; 
+    outline: none; 
+    background-color: #F0FDFC; 
+    color: #333333; 
+}
+QPushButton {
+    background-color: #2A9D8F; 
+    color: #FFFFFF; 
+    border-radius: 8px; 
+    padding: 6px 12px; 
+    font-size: 14px; 
+    border: 2px solid #2A9D8F; 
+}
+
+QPushButton:hover {
+    background-color: #A4C639; 
+    border: 2px solid #A4C639; 
+}
+
+QPushButton:pressed {
+    background-color: #207567; 
+    border: 2px solid #207567; 
+}
+QComboBox {
+    background-color: #FFFFFF; 
+    border: 2px solid #CCCCCC; 
+    border-radius: 8px; 
+    padding: 5px; 
+    font-size: 12px; 
+    color: #333333; 
+}
+
+QComboBox:hover {
+    border: 2px solid #A4C639; 
+}
+
+QComboBox:focus {
+    border: 2px solid #2A9D8F; 
+    outline: none; 
+    background-color: #F0FDFC; 
+}
+
+QComboBox QAbstractItemView {
+    background-color: #FFFFFF; 
+    selection-background-color: #2A9D8F; 
+    selection-color: #FFFFFF; 
+}
+QSpinBox {
+    background-color: #FFFFFF; 
+    border: 2px solid #CCCCCC; 
+    border-radius: 8px; 
+    padding: 5px; 
+    font-size: 12px; 
+    color: #333333; 
+}
+
+QSpinBox:hover {
+    border: 2px solid #A4C639; 
+}
+
+QSpinBox:focus {
+    border: 2px solid #2A9D8F; 
+    outline: none; 
+    background-color: #F0FDFC; 
+}
+QRadioButton {
+    color: #333333; 
+    font-size: 12px; 
+}
+
+QRadioButton::indicator {
+    border: 2px solid #CCCCCC; 
+    border-radius: 6px; 
+    width: 12px; 
+    height: 12px; 
+    background: #FFFFFF; 
+}
+
+QRadioButton::indicator:hover {
+    border: 2px solid #A4C639; 
+}
+
+QRadioButton::indicator:checked {
+    background: #2A9D8F; 
+}
+
+QGroupBox {
+    border: 2px solid #CCCCCC; 
+    border-radius: 8px; 
+    margin-top: 10px; 
+    font-weight: bold; 
+    font-size: 12px; 
+    color: #2A9D8F; 
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin; 
+    subcontrol-position: top center; 
+    padding: 0 10px; 
+    background-color: #FFFFFF; 
+}
+QDateEdit {
+    background-color: #FFFFFF; 
+    border: 2px solid #CCCCCC; 
+    border-radius: 8px; 
+    padding: 5px; 
+    font-size: 12px; 
+    color: #333333; 
+}
+
+QDateEdit:hover {
+    border: 2px solid #A4C639; 
+}
+
+QDateEdit:focus {
+    border: 2px solid #2A9D8F; 
+    outline: none; 
+    background-color: #F0FDFC; 
+}</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_6">
+       <item row="0" column="0">
+        <spacer name="horizontalSpacer_13">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>77</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="a_pushButton_volver">
+         <property name="minimumSize">
+          <size>
+           <width>90</width>
+           <height>36</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QPushButton {
+    background-color: #E76F51;
+    color: #FFFFFF;  
+    border-radius: 8px; 
+    padding: 6px 12px;
+    font-size: 14px;  
+    border: 2px solid #E76F51;  
+}
+
+QPushButton:hover {
+    background-color: #F4A261;
+    border: 2px solid #F4A261;  
+}
+
+QPushButton:pressed {
+    background-color: #D75D32; 
+    border: 2px solid #D75D32; 
+}
+</string>
+         </property>
+         <property name="text">
+          <string>volver</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>76</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="3">
+        <widget class="QPushButton" name="a_pushButton_reserva">
+         <property name="minimumSize">
+          <size>
+           <width>90</width>
+           <height>36</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>reservar</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>77</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

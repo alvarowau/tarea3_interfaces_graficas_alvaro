@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Login</class>
+ <widget class="QWidget" name="Login">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>332</width>
+    <height>440</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>332</width>
+    <height>440</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>332</width>
+    <height>440</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>LOGIN</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: qlineargradient(
+        spread:pad, 
+        x1:0, y1:0, 
+        x2:1, y2:1, 
+        stop:0 #EAF4F4, /* Verde muy claro */
+        stop:1 #C7E6E5  /* Tonalidad verde suave */
+    );
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #555555; /* Gris suave para el texto general */
+}</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>333</width>
+     <height>439</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QWidget" name="a_widget_title" native="true">
+      <property name="styleSheet">
+       <string notr="true">QWidget {
+    background-color: qlineargradient(
+        spread:pad, 
+        x1:0, y1:0, 
+        x2:1, y2:1, 
+        stop:0 #EAF4F4, 
+        stop:1 #C7E6E5 
+    );
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #555555; 
+}</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="a_label_title">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+    font-size: 20px;
+    font-weight: bold;
+    color: #2A9D8F; 
+    letter-spacing: 2px;
+    qproperty-alignment: AlignCenter; 
+    margin-top: 10px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>CENTRO DE RESERVAS</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QWidget" name="a_widget_logo" native="true">
+      <property name="styleSheet">
+       <string notr="true">QWidget {
+    background-color: qlineargradient(
+        spread:pad, 
+        x1:0, y1:0, 
+        x2:1, y2:1, 
+        stop:0 #EAF4F4, 
+        stop:1 #C7E6E5 
+    );
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #555555; 
+}</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>96</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="a_label_logo">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="resources.qrc">:/images/icons/brianda1.png</pixmap>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>96</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QWidget" name="a_widget_button" native="true">
+      <property name="styleSheet">
+       <string notr="true">QWidget {
+    background-color: qlineargradient(
+        spread:pad, 
+        x1:0, y1:0, 
+        x2:1, y2:1, 
+        stop:0 #EAF4F4, 
+        stop:1 #C7E6E5 
+    );
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #555555; 
+}</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="a_label_user">
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    font-size: 14px;
+    font-weight: bold;
+    color: #444444; /* Gris más oscuro para mejor contraste */
+    margin-bottom: 8px; /* Mayor espaciado inferior */
+    letter-spacing: 0.8px; /* Espaciado entre letras más sutil */
+    text-transform: uppercase; /* Texto en mayúsculas */
+}
+
+QLabel:hover {
+    color: #2A9D8F; /* Verde principal al pasar el cursor */
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Usuario:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="a_lineEdit_user">
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #FFFFFF; 
+    border: 2px solid #CCCCCC; 
+    border-radius: 8px; 
+    padding: 5px;
+    font-size: 12px;
+    color: #333333; 
+    selection-background-color: #2A9D8F; 
+    selection-color: #FFFFFF; 
+}
+
+QLineEdit:hover {
+    border: 2px solid #A4C639; 
+}
+
+QLineEdit:focus {
+    border: 2px solid #2A9D8F;
+    outline: none;
+    background-color: #F0FDFC; 
+    color: #333333; 
+}
+</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="a_label_pass">
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    font-size: 14px;
+    font-weight: bold;
+    color: #444444; /* Gris más oscuro para mejor contraste */
+    margin-bottom: 8px; /* Mayor espaciado inferior */
+    letter-spacing: 0.8px; /* Espaciado entre letras más sutil */
+    text-transform: uppercase; /* Texto en mayúsculas */
+}
+
+QLabel:hover {
+    color: #2A9D8F; /* Verde principal al pasar el cursor */
+}
+</string>
+         </property>
+         <property name="text">
+          <string>CONTRASEÑA</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="a_lineEdit_pass">
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #FFFFFF; 
+    border: 2px solid #CCCCCC; 
+    border-radius: 8px; 
+    padding: 5px;
+    font-size: 12px;
+    color: #333333; 
+    selection-background-color: #2A9D8F; 
+    selection-color: #FFFFFF; 
+}
+
+QLineEdit:hover {
+    border: 2px solid #A4C639; 
+}
+
+QLineEdit:focus {
+    border: 2px solid #2A9D8F;
+    outline: none;
+    background-color: #F0FDFC; 
+    color: #333333; 
+}
+</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>310</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="a_button_login">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #2A9D8F; /* Verde original */
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #A4C639; /* Verde-amarillo intermedio */
+}
+
+QPushButton:pressed {
+    background-color: #E76F51; /* Naranja intenso para contraste */
+    color: #FFFFFF; /* Texto blanco */
+}
+
+</string>
+         </property>
+         <property name="text">
+          <string>LOGIN</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>310</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

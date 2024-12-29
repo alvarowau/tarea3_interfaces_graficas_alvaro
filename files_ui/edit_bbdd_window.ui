@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>edit_bbdd_windows</class>
+ <widget class="QWidget" name="edit_bbdd_windows">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>381</width>
+    <height>412</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>381</width>
+    <height>412</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>381</width>
+    <height>412</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Edit bbdd</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: qlineargradient(
+        spread:pad, 
+        x1:0, y1:0, 
+        x2:1, y2:1, 
+        stop:0 #EAF4F4, 
+        stop:1 #C7E6E5 
+    );
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #555555;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="widget_3" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>381</width>
+     <height>411</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_5">
+    <item row="0" column="0" colspan="3">
+     <widget class="QWidget" name="widget_2" native="true">
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="4">
+        <spacer name="horizontalSpacer_5">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="a_button_mysql">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #616161; /* Gris oscuro para MySQL */
+    color: white; /* Color de texto blanco */
+    border-radius: 10px;
+    padding: 10px 20px; /* Aumentar el padding para mejor apariencia */
+    font-size: 14px;
+    font-weight: bold;
+    width: 200px; /* Establecer un ancho fijo para los botones */
+}
+
+QPushButton:hover {
+    background-color: #424242; /* Gris aún más oscuro para hover */
+    color: #FFFFFF; /* Mantener texto blanco en hover */
+}
+
+QPushButton:pressed {
+    background-color: #212121; /* Gris más oscuro al presionar */
+    color: #FFFFFF; /* Texto blanco al presionar */
+}
+</string>
+         </property>
+         <property name="text">
+          <string>mysql</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QPushButton" name="a_button_sqlite">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #FF5722; /* Naranja para SQLite */
+    color: white; /* Color de texto blanco */
+    border-radius: 10px;
+    padding: 10px 20px; /* Aumentar el padding para mejor apariencia */
+    font-size: 14px;
+    font-weight: bold;
+    width: 200px; /* Establecer un ancho fijo para los botones */
+}
+
+QPushButton:hover {
+    background-color: #E64A19; /* Naranja más oscuro para hover */
+    color: #FFFFFF; /* Mantener texto blanco en hover */
+}
+
+QPushButton:pressed {
+    background-color: #E76F51; /* Naranja intenso para contraste */
+    color: #FFFFFF; /* Texto blanco al presionar */
+}
+</string>
+         </property>
+         <property name="text">
+          <string>sqLite</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <spacer name="horizontalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>1</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="0">
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>1</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <spacer name="horizontalSpacer_6">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>114</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="a_button_save">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #007BFF; /* Azul brillante para Aceptar */
+    color: white; /* Color de texto blanco */
+    border-radius: 12px; /* Bordes redondeados para un estilo suave */
+    padding: 12px 24px; /* Aumentar el padding para mejor apariencia */
+    font-size: 14px; /* Fuente más grande para destacar */
+    font-weight: bold; /* Resaltar el texto */
+    width: 220px; /* Establecer un ancho fijo para el botón */
+}
+
+QPushButton:hover {
+    background-color: #0056b3; /* Azul más oscuro para hover */
+    color: #FFFFFF; /* Mantener texto blanco en hover */
+}
+
+QPushButton:pressed {
+    background-color: #004085; /* Azul aún más oscuro al presionar */
+    color: #FFFFFF; /* Texto blanco al presionar */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>GUARDAR</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <spacer name="horizontalSpacer_7">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>114</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="1" column="0" colspan="3">
+     <widget class="QStackedWidget" name="stackedWidget">
+      <widget class="QWidget" name="page">
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0">
+         <widget class="QWidget" name="widget" native="true">
+          <property name="styleSheet">
+           <string notr="true">QWidget {
+    background-color: qlineargradient(
+        spread:pad, 
+        x1:0, y1:0, 
+        x2:1, y2:1, 
+        stop:0 #EAF4F4, 
+        stop:1 #C7E6E5 
+    );
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #555555;
+}
+
+QPushButton {
+    background-color: #4CAF50; /* Verde más vivo para diferenciarlo */
+    color: white; /* Color de texto blanco */
+    border-radius: 10px;
+    padding: 10px 20px; /* Aumentar el padding para mejor apariencia */
+    font-size: 14px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #A4C639; /* Verde-amarillo intermedio */
+    color: #333333; /* Gris oscuro para el texto al pasar el cursor */
+}
+
+QPushButton:pressed {
+    background-color: #E76F51; /* Naranja intenso para contraste */
+    color: #FFFFFF; /* Texto blanco al presionar */
+}
+</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="0" column="0" colspan="3">
+            <widget class="QWidget" name="a_form_mysql" native="true">
+             <property name="styleSheet">
+              <string notr="true">QWidget {
+    background-color: qlineargradient(
+        spread:pad, 
+        x1:0, y1:0, 
+        x2:1, y2:1, 
+        stop:0 #EAF4F4, 
+        stop:1 #C7E6E5 
+    );
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #555555; 
+}
+
+QLineEdit {
+    background-color: #FFFFFF; 
+    border: 2px solid #CCCCCC; 
+    border-radius: 8px; 
+    padding: 5px;
+    font-size: 12px;
+    color: #333333; 
+    selection-background-color: #2A9D8F; 
+    selection-color: #FFFFFF; 
+}
+
+QLineEdit:hover {
+    border: 2px solid #A4C639; 
+}
+
+QLineEdit:focus {
+    border: 2px solid #2A9D8F;
+    outline: none;
+    background-color: #F0FDFC; 
+    color: #333333; 
+}
+
+QLabel {
+    font-size: 14px;
+    font-weight: bold;
+    color: #444444; /* Gris más oscuro para mejor contraste */
+    margin-bottom: 8px; /* Mayor espaciado inferior */
+    letter-spacing: 0.8px; /* Espaciado entre letras más sutil */
+    text-transform: uppercase; /* Texto en mayúsculas */
+	text-align: center; /* Centrar el texto */
+}
+
+QLabel:hover {
+    color: #2A9D8F; /* Verde principal al pasar el cursor */
+}
+</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout">
+              <item row="0" column="0">
+               <widget class="QLabel" name="a_label_host">
+                <property name="text">
+                 <string>host:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLineEdit" name="a_lineEdit_host"/>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="a_label_port">
+                <property name="text">
+                 <string>port:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QLineEdit" name="a_lineEdit_port"/>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="a_label_user">
+                <property name="text">
+                 <string>usuario:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QLineEdit" name="a_lineEdit_user"/>
+              </item>
+              <item row="3" column="0">
+               <widget class="QLabel" name="a_label_pass">
+                <property name="text">
+                 <string>contraseña:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="QLineEdit" name="a_lineEdit_password"/>
+              </item>
+              <item row="4" column="0">
+               <widget class="QLabel" name="a_label_bbdd">
+                <property name="text">
+                 <string>base datos:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="1">
+               <widget class="QLineEdit" name="a_lineEdit_bbdd"/>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>105</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="1" column="1">
+            <widget class="QPushButton" name="a_button_test">
+             <property name="minimumSize">
+              <size>
+               <width>100</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>100</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>test</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>104</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_2">
+       <layout class="QGridLayout" name="gridLayout_7">
+        <item row="0" column="0">
+         <widget class="QWidget" name="widget_4" native="true">
+          <widget class="QWidget" name="a_form_sqlite" native="true">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>10</y>
+             <width>321</width>
+             <height>101</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+QLineEdit {
+    background-color: #FFFFFF; 
+    border: 2px solid #CCCCCC; 
+    border-radius: 8px; 
+    padding: 5px;
+    font-size: 12px;
+    color: #333333; 
+    selection-background-color: #2A9D8F; 
+    selection-color: #FFFFFF; 
+}
+
+QLineEdit:hover {
+    border: 2px solid #A4C639; 
+}
+
+QLineEdit:focus {
+    border: 2px solid #2A9D8F;
+    outline: none;
+    background-color: #F0FDFC; 
+    color: #333333; 
+}
+</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_6">
+            <item row="0" column="0">
+             <spacer name="horizontalSpacer_11">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>12</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLineEdit" name="a_lineEdit_search_file"/>
+            </item>
+            <item row="0" column="2">
+             <spacer name="horizontalSpacer_10">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>5</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="1" column="0">
+             <spacer name="horizontalSpacer_8">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>12</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="1" column="1">
+             <widget class="QPushButton" name="a_pushButton_select_file">
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    background-color: #B0BEC5; /* Gris claro para el botón */
+    color: white; /* Texto blanco */
+    border-radius: 12px; /* Bordes redondeados */
+    padding: 12px 24px; /* Aumentar el padding para mejor apariencia */
+    font-size: 14px; /* Fuente más grande */
+    font-weight: bold; /* Texto en negrita */
+    width: 220px; /* Ancho fijo */
+}
+
+QPushButton:hover {
+    background-color: #90A4AE; /* Gris más oscuro al pasar el cursor */
+}
+
+QPushButton:pressed {
+    background-color: #607D8B; /* Gris aún más oscuro cuando se presiona */
+}
+</string>
+              </property>
+              <property name="text">
+               <string>Seleccionar archivo</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <spacer name="horizontalSpacer_9">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>5</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QPushButton" name="a_button_test_sqlite">
+           <property name="geometry">
+            <rect>
+             <x>120</x>
+             <y>120</y>
+             <width>100</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+QPushButton {
+    background-color: #4CAF50; /* Verde más vivo para diferenciarlo */
+    color: white; /* Color de texto blanco */
+    border-radius: 10px;
+    padding: 10px 20px; /* Aumentar el padding para mejor apariencia */
+    font-size: 14px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #A4C639; /* Verde-amarillo intermedio */
+    color: #333333; /* Gris oscuro para el texto al pasar el cursor */
+}
+
+QPushButton:pressed {
+    background-color: #E76F51; /* Naranja intenso para contraste */
+    color: #FFFFFF; /* Texto blanco al presionar */
+}
+</string>
+           </property>
+           <property name="text">
+            <string>test</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

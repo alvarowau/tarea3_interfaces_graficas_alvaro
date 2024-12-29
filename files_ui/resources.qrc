@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="images">
+    <file>icons/brianda.jpeg</file>
+    <file>icons/brianda1.png</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,19 @@
+{
+    "users": {
+        "User1": {
+            "username": "alvaro",
+            "password": "alvaro",
+            "role": "admin"
+        },
+        "User2": {
+            "username": "admin2",
+            "password": "admin2",
+            "role": "user"
+        },
+        "User3": {
+            "username": "hotel",
+            "password": "Brianda23$",
+            "role": "user"
+        }
+    }
+}

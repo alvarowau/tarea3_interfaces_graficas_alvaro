@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>windows_conec</class>
+ <widget class="QWidget" name="windows_conec">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>570</width>
+    <height>293</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>570</width>
+    <height>293</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>570</width>
+    <height>293</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="a_widget_principal" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>571</width>
+     <height>295</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+    background-color: qlineargradient(
+        spread:pad, 
+        x1:0, y1:0, 
+        x2:1, y2:1, 
+        stop:0 #EAF4F4, 
+        stop:1 #C7E6E5 
+    );
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #555555; 
+}</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_4">
+    <item row="0" column="2">
+     <spacer name="horizontalSpacer_7">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>120</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLabel" name="a_label_title_windows">
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+    font-size: 20px;
+    font-weight: bold;
+    color: #2A9D8F; 
+    letter-spacing: 2px;
+    qproperty-alignment: AlignCenter; 
+    margin-top: 10px;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>conexiones base de datos</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <spacer name="horizontalSpacer_6">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>120</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="1" column="0" colspan="3">
+     <widget class="QWidget" name="widget" native="true">
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="1" column="0">
+        <spacer name="horizontalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>148</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="a_button_app">
+         <property name="minimumSize">
+          <size>
+           <width>220</width>
+           <height>35</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #2A9D8F; /* Verde original */
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #A4C639; /* Verde-amarillo intermedio */
+}
+
+QPushButton:pressed {
+    background-color: #E76F51; /* Naranja intenso para contraste */
+    color: #FFFFFF; /* Texto blanco */
+}
+
+</string>
+         </property>
+         <property name="text">
+          <string>Conectar</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <spacer name="horizontalSpacer_5">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>149</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="0" colspan="3">
+        <widget class="QWidget" name="a_widget_grupo_conec" native="true">
+         <property name="styleSheet">
+          <string notr="true">QWidget {
+    border: 2px solid #3399FF;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #FFFFFF;
+}</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0" colspan="2">
+           <widget class="QLabel" name="label_title_grupo">
+            <property name="minimumSize">
+             <size>
+              <width>245</width>
+              <height>55</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel#label_title_grupo {
+    color: #007BFF;
+    font-size: 14px;
+    font-weight: bold;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>Selecciona la Base de Datos</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2" colspan="2">
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>166</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="1" column="0" colspan="4">
+           <widget class="QWidget" name="widget_2" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>320</width>
+              <height>65</height>
+             </size>
+            </property>
+            <layout class="QGridLayout" name="gridLayout">
+             <item row="0" column="0">
+              <widget class="QRadioButton" name="a_radioButton_mysql">
+               <property name="styleSheet">
+                <string notr="true">QRadioButton {
+    font-size: 14px;
+    color: #007BFF;
+}</string>
+               </property>
+               <property name="text">
+                <string>Mysql</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLabel" name="a_label_color_mysql">
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QRadioButton" name="a_radioButton_sqlite">
+               <property name="styleSheet">
+                <string notr="true">QRadioButton {
+    font-size: 14px;
+    color: #007BFF;
+}</string>
+               </property>
+               <property name="text">
+                <string>SqLite</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="3">
+              <widget class="QLabel" name="a_label_color_sqlite">
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>236</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="2" column="1" colspan="2">
+           <widget class="QPushButton" name="a_button_conec">
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #2A9D8F; /* Verde original */
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #A4C639; /* Verde-amarillo intermedio */
+}
+
+QPushButton:pressed {
+    background-color: #E76F51; /* Naranja intenso para contraste */
+    color: #FFFFFF; /* Texto blanco */
+}
+</string>
+            </property>
+            <property name="text">
+             <string>Modificar Conexión</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="3">
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>63</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

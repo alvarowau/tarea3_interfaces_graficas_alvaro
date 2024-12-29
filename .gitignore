@@ -1,0 +1,21 @@
+# Entorno virtual
+tarea3-env/
+
+# Archivos de configuración del sistema
+.vscode/
+.idea/
+
+# Caché de Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Archivos de log
+*.log
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Dependencias instaladas
+*.egg-info/
