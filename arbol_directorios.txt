@@ -1,0 +1,96 @@
+.
+├── arbol_directorios.txt
+├── bbdd
+│   ├── config_mysql.py
+│   ├── config_sqlite.py
+│   ├── data_base_manager.py
+│   ├── mysql_conection.py
+│   └── sqlite_conection.py
+├── config
+│   ├── config_mysql.py
+│   ├── config_sqlite.py
+│   ├── configuracion_base_datos.py
+│   ├── configuracion_mysql.py
+│   └── configuracion_sqlite.py
+├── controller
+│   ├── edit_bbdd_controler.py
+│   ├── login_controller.py
+│   ├── window_main_principal_controller.py
+│   ├── windows_edit_conexion_controller.py
+│   └── windows_reserva_controller.py
+├── dao
+│   ├── __init__.py
+│   ├── queries
+│   │   ├── __init__.py
+│   │   ├── reservas_queries.py
+│   │   ├── salones_queries.py
+│   │   ├── tipo_cocina_queries.py
+│   │   └── tipo_reservas_queries.py
+│   ├── reserva_dao.py
+│   ├── salon_dao.py
+│   ├── tipo_cocina_dao.py
+│   └── tipo_reserva_dao.py
+├── docker-compose.yml
+├── file_configuracion
+│   ├── bbdd.json
+│   └── users.json
+├── files_ui
+│   ├── edit_bbdd_window.py
+│   ├── edit_bbdd_window.ui
+│   ├── icons
+│   │   ├── brianda1.png
+│   │   └── brianda.jpeg
+│   ├── login_windows.py
+│   ├── login_windows.ui
+│   ├── prueba_principal.py
+│   ├── prueba_principal.ui
+│   ├── resources.qrc
+│   ├── resources_rc.py
+│   ├── ui_window_edit_conexion.py
+│   ├── ui_window_reserva.py
+│   ├── ui_windows_main_principal.py
+│   ├── window_edit_conexion.ui
+│   ├── window_reserva_deprecated.ui
+│   ├── window_reserva.ui
+│   └── windows_main_principal.ui
+├── images
+│   ├── imagen_10.png
+│   ├── imagen_11.png
+│   ├── imagen_12.png
+│   ├── imagen_13.png
+│   ├── imagen_14.png
+│   ├── imagen_15.png
+│   ├── imagen_16.png
+│   ├── imagen_17.png
+│   ├── imagen_18.png
+│   ├── imagen_19.png
+│   ├── imagen_1.png
+│   ├── imagen_20.png
+│   ├── imagen_2.png
+│   ├── imagen_3.png
+│   ├── imagen_4.png
+│   ├── imagen_5.png
+│   ├── imagen_6.png
+│   ├── imagen_7.png
+│   ├── imagen_8.png
+│   └── imagen_9.png
+├── main.py
+├── model
+│   ├── __init__.py
+│   ├── reserva.py
+│   ├── salon.py
+│   ├── tipo_cocina.py
+│   └── tipo_reserva.py
+├── my_data_base.sqlite
+├── README.md
+├── requirements.txt
+├── scrip-base-datos
+│   ├── database_sqlite.sql
+│   └── setup_database_mysql.sql
+└── util
+    ├── comprobaciones.py
+    ├── comprobaciones_tablas_base_datos.py
+    ├── mostrar_mensajes.py
+    └── util_login.py
+
+13 directories, 81 files
